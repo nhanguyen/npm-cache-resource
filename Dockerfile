@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:latest
+FROM node:18.19.1-alpine
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -30,8 +30,8 @@ RUN apk add --update \
     libpng-dev \
     nasm \
     build-base \
-    python2 \
-    python2-dev \
+    python3 \
+    python3-dev \
     # Fix problem with some dependencies: https://github.com/ymedlop/npm-cache-resource/issues/39
     libtool \
     automake \
