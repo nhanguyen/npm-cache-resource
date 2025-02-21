@@ -1,4 +1,4 @@
-FROM node:18.19.1-alpine
+FROM node:20.18.3-alpine
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
